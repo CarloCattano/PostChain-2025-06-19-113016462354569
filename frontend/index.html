@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>PostChain Snapshot Tweet</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module">
+      import { backend } from "declarations/backend";
+
+      document.querySelector("form").addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const tweetID = document.getElementById("tweetID").value.toString();
+        let greeting = await backend.get_twitter_post(tweetID);
+        document.getElementById("greeting").innerText = greeting;
+      });
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <span class="header-title">PostChain</span>
+    </div>
+    <main>
+      <form>
+        <label for="tweetID">Enter Tweet id:</label>
+        <input id="tweetID" alt="tweet ID" type="text" />
+        <button type="submit">Submit</button>
+      </form>
+      <section id="greeting"></section>
+    </main>
+  </body>
+</html>
