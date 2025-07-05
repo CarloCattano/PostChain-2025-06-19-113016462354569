@@ -1,5 +1,9 @@
 First price at the AI Summit Hackathlon at web3.hub Berlin June 2025 !
 
+![image](https://github.com/user-attachments/assets/2a3f22af-5ed7-42a8-8890-58c847ed3202)
+
+
+
 ## IDEA 
 
 _ the project is entirely new and built from scratch during the event. AI SUMMIT HACKATHON 2025_
